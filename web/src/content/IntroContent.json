@@ -1,0 +1,15 @@
+{
+  "title": "Internship Management Portal",
+  "text": "Official website for management of student interns",
+  "button": [
+    {
+      "title": "Login",
+      "to":"/login"
+    },
+    {
+      "title": "Create a new account",
+      "color": "#fff",
+      "to":"/signup"
+    }
+  ]
+}
