@@ -6,10 +6,12 @@ import PaginatedTable from "../../components/PaginatedTable";
 import Attendance from "../../components/Attendance";
 import useAPI from "../../hooks/useAPI";
 import studentsAPI from "../../api/students";
+
 const Page = () => {
     const { studentId } = useParams();
     const navigate = useNavigate();
     const { loading, request, error, data } = useAPI(studentsAPI.getByStudentId);
+
     useEffect(() => {
         request(studentId);
     }, [])
@@ -22,6 +24,7 @@ const Page = () => {
         }
         return rows;
     }
+
     const toAttendanceRow = (data) => {
         const rows = [];
         if (data && data.length) {
@@ -31,6 +34,7 @@ const Page = () => {
         }
         return rows;
     }
+
     const toInternshipRow = (internship) => {
         const rows = [];
         if (internship) {
@@ -47,6 +51,7 @@ const Page = () => {
         }
         return rows;
     }
+
     const toCompanyRow = (internship) => {
         const rows = [];
         try {
@@ -64,6 +69,7 @@ const Page = () => {
         }
         return rows;
     }
+
     const studentActions = (data) => {
         const actions = [];
         if (data && data.internship && data.internship.documentOfIntent)
@@ -80,7 +86,6 @@ const Page = () => {
             <Attendance data={data.attendance} />
         </>}
     </Content>
-
 
 }
 export default Page;
