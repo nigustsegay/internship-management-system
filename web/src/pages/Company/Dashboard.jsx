@@ -4,11 +4,13 @@ import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import internRequestAPI from "../../api/internRequests";
+
 const Page = () => {
     const auth = useAuth();
     const companyName = btoa(auth.metadata.companyName);
     const { request, loading, data, error } = useAPI(internRequestAPI.allByCompany);
     useEffect(() => { request(companyName) }, [])
+   
     const toRow = (data) => {
         const rows = [];
         if (data && data.length) {
