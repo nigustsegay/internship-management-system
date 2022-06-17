@@ -26,4 +26,5 @@ const Page = () => {
         </>}
     </Content>
 }
+
 export default Page;

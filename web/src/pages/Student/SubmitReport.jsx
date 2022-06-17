@@ -5,6 +5,7 @@ import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import reportsAPI from "../../api/reports"
 import { useNavigate } from "react-router-dom";
+
 const Page = () => {
     const navigate = useNavigate()
     const { metadata: { studentId } } = useAuth()

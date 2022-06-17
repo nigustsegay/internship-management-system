@@ -9,6 +9,7 @@ import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import studentsAPI from "../../api/students";
 import internRequestsAPI from "../../api/internRequests";
+
 const Page = () => {
     const auth = useAuth();
     const studentId = btoa(auth.metadata.studentId);

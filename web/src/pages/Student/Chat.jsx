@@ -7,4 +7,5 @@ const Page = () => {
         <ChatBox />
     </>
 }
+
 export default Page;

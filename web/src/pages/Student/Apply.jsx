@@ -6,6 +6,7 @@ import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import internshipsAPI from "../../api/internships";
 import { useNavigate } from 'react-router-dom';
+
 function Page() {
     const navigate = useNavigate();
     const { metadata: { studentId } } = useAuth();
