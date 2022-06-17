@@ -4,7 +4,6 @@ import { Student } from './student.entity';
 import { StudentRepository } from './student.repository';
 
 export type StudentPayload = Omit<Student, "createdAt" | "updatedAt">
-
 @Injectable()
 export class StudentService {
   constructor(

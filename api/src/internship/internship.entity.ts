@@ -8,7 +8,6 @@ import {
   JoinColumn,
   ManyToOne
 } from 'typeorm';
-
 import { Student } from 'src/student/student.entity';
 import { Company } from 'src/company/company.entity';
 import { Advisor } from 'src/advisor/advisor.entity';

@@ -4,7 +4,6 @@ import { Message } from './message.entity';
 import { MessageRepository } from './message.repository';
 
 export type MessagePayload = Omit<Message, "createdAt" | "updatedAt">
-
 @Injectable()
 export class MessageService {
   constructor(
