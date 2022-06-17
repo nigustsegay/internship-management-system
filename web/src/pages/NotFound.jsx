@@ -3,6 +3,7 @@ import { useStyletron } from 'baseui';
 import banner from "../banner.png";
 import { Link } from "react-router-dom";
 import { Block } from "baseui/block";
+
 const Page = () => {
     const [css, theme] = useStyletron();
     return (

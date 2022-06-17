@@ -6,6 +6,7 @@ import PaginatedTable from "../components/PaginatedTable";
 import useAPI from "../hooks/useAPI";
 import useAuth from "../hooks/useAuth";
 import chatAPI from "../api/chat";
+
 const Page = () => {
     const auth = useAuth();
     const email = btoa(auth.metadata.email);

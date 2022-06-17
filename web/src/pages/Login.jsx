@@ -5,6 +5,7 @@ import banner from "../banner.png";
 import { Block } from "baseui/block";
 import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth"
+
 const Page = () => {
     const [css, theme] = useStyletron();
     const { login: { request, loading } } = useAuth();

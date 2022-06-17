@@ -6,6 +6,7 @@ import useAuth from "../hooks/useAuth";
 import chatAPI from "../api/chat"
 import internshipsAPI from "../api/internships";
 import { useNavigate } from "react-router-dom";
+
 const Page = () => {
     const navigate = useNavigate()
     const auth = useAuth();

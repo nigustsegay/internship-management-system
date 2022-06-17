@@ -4,4 +4,5 @@ const Page = () => {
        Reset Password
     </h1>
 }
+
 export default Page;

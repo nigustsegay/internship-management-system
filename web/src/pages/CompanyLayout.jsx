@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { FaBuilding, FaChartPie, FaChalkboardTeacher, FaUsers } from 'react-icons/fa';
 import Dashboard from "../components/Dashboard";
 import RoleRoute from "./RoleRoute";
+
 export const menu = [
     {
         title: 'Dashboard',
