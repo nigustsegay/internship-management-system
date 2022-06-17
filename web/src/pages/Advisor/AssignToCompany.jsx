@@ -14,6 +14,8 @@ const Page = () => {
     useEffect(() => {
         studentRequest(studentId)
     }, [])
+
+    
     const { request: studentRequest, loading: studentLoading, data: studentData } = useAPI(studentsAPI.getByStudentId, { errorMessage: "Could not load student information", onComplete: ({ department }) => { companyRequest(department) } });
     const { request: companyRequest, loading: companyLoading } = useAPI(internRequestsAPI.allByDepartment, { errorMessage: "Could not load companies", onComplete: (list) => { setCompanies(list.map(({ company: { name } }) => { return { label: name, id: name } })) } });
     const { request: assignCompany, loading: assignLoading } = useAPI(internshipAPI.assignCompany, { errorMessage: "Could not assign Company", successMessage: "Company assigned", onComplete: () => { navigate(-1) } });
