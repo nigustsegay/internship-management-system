@@ -8,7 +8,6 @@ import studentsAPI from '../../api/students';
 import internshipAPI from "../../api/internships";
 import internRequestsAPI from "../../api/internRequests";
 import PaginatedTable from "../../components/PaginatedTable";
-
 const Page = () => {
     const navigate = useNavigate();
     const { studentId } = useParams();
