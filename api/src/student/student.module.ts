@@ -12,7 +12,6 @@ import { AttendanceModule } from "../attendance/attendance.module";
 import { ReportModule } from "../report/report.module";
 import { TaskModule } from "../task/task.module";
 import { MessageModule } from 'src/message/message.module';
-cc
 @Module({
   imports: [
     TypeOrmModule.forFeature([Student, StudentRepository]),

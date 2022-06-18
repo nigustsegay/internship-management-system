@@ -5,7 +5,7 @@ import { InternshipService } from "src/internship/internship.service"
 import { Student } from './student.entity';
 import { UserRole } from 'src/user/user.entity';
 import { Roles } from '../auth/decorator/roles.decorator';
-sasdfg
+
 @Controller('/api/students')
 export class StudentController {
   constructor(
