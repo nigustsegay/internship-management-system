@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import internRequestsAPI from "../../api/internRequests";
+
 const Page = () => {
     const { request: getRequests, loading: requestLoading, data: requestData, error: requestError } = useAPI(internRequestsAPI.all);
 

@@ -15,6 +15,7 @@ import companiesAPI from "../../api/companies";
 const Page = () => {
   const { name } = useParams();
   const { loading, request, error, data } = useAPI(companiesAPI.getByName);
+  
   useEffect(() => {
     request(name);
   }, [])

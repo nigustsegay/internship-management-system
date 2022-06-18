@@ -17,7 +17,6 @@ export const menu = [
     },
 ]
 
-
 const Layout = () => {
     return <Dashboard menu={menu} title="Company Advisor">
         <RoleRoute role="COMPANY" />

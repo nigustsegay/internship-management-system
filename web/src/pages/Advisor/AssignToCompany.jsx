@@ -7,6 +7,7 @@ import useAPI from "../../hooks/useAPI";
 import studentsAPI from '../../api/students';
 import internshipAPI from "../../api/internships";
 import internRequestsAPI from "../../api/internRequests";
+
 const Page = () => {
     const navigate = useNavigate();
     const { studentId } = useParams();

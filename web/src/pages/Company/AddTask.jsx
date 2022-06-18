@@ -4,7 +4,6 @@ import Content from "../../components/Content"
 import CreateTask from "../../components/CreateTask";
 import useAPI from "../../hooks/useAPI";
 import tasksAPI from "../../api/tasks"
-
 const Page = () => {
     const navigate = useNavigate();
     const { studentId } = useParams();

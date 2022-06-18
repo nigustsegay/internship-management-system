@@ -5,6 +5,7 @@ import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import internRequestsAPI from "../../api/internRequests";
 import internshipsAPI from "../../api/internships";
+
 const Page = () => {
     const { request: getRequests, loading: requestLoading, data: requestData, error: requestError } = useAPI(internRequestsAPI.pending);
     const { request: getInternships, loading: internshipLoading, data: internshipData, error: internshipError } = useAPI(internshipsAPI.pending);

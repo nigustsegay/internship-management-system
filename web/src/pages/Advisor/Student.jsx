@@ -11,7 +11,6 @@ const Page = () => {
     const { studentId } = useParams();
     const navigate = useNavigate();
     const { loading, request, error, data } = useAPI(studentsAPI.getByStudentId);
-
     useEffect(() => {
         request(studentId);
     }, [])

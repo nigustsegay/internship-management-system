@@ -7,7 +7,6 @@ import {
 } from 'baseui/card';
 import { Avatar } from "baseui/avatar";
 import { ListItem, ListItemLabel } from 'baseui/list';
-
 import { Button } from 'baseui/button';
 import { useParams } from "react-router-dom";
 import Content from "../../components/Content";
@@ -23,8 +22,6 @@ const Page = () => {
   }, [])
   return <Content error={error} isLoading={loading} title="Advisor Profile">
     {data && <>
-
-
 
       <Card
         title={data.user.fullname}

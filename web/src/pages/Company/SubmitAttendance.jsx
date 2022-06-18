@@ -4,7 +4,6 @@ import Content from "../../components/Content";
 import SubmitAttendance from "../../components/SubmitAttendance";
 import useAPI from "../../hooks/useAPI";
 import attendanceAPI from "../../api/attendance"
-
 const Page = () => {
     const navigate = useNavigate();
     const { studentId } = useParams();

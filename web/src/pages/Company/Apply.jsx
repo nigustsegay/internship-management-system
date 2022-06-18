@@ -5,6 +5,7 @@ import internRequestsAPI from "../../api/internRequests";
 import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import { useNavigate } from 'react-router-dom';
+
 function Page() {
     const navigate = useNavigate();
     const { metadata: { companyName } } = useAuth();

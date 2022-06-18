@@ -4,7 +4,6 @@ import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import internRequestAPI from "../../api/internRequests";
-
 const Page = () => {
     const auth = useAuth();
     const companyName = btoa(auth.metadata.companyName);

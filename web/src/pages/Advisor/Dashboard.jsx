@@ -4,7 +4,6 @@ import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import useAuth from "../../hooks/useAuth";
 import internshipsAPI from "../../api/internships";
-
 const Page = () => {
     const auth = useAuth();
     const advisorId = btoa(auth.metadata.advisorId);

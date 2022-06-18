@@ -56,7 +56,6 @@ export const menu = [
     },
 ]
 
-
 const Layout = () => {
     return <Dashboard menu={menu} title="">
         <RoleRoute role="ADMIN" />

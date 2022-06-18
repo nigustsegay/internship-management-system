@@ -4,8 +4,8 @@ import PaginatedTable from "../../components/PaginatedTable";
 import useAPI from "../../hooks/useAPI";
 import internshipsAPI from "../../api/internships";
 import internRequestsAPI from "../../api/internRequests";
-const Page = () => {
 
+const Page = () => {
     const { request: getInternships, loading: internshipLoading, data: internshipData, error: internshipError } = useAPI(internshipsAPI.all);
     const { request: getRequests, loading: requestLoading, data: requestData, error: requestError } = useAPI(internRequestsAPI.all);
     const navigate = useNavigate()

@@ -4,6 +4,7 @@ import Content from "../../components/Content";
 import useAPI from "../../hooks/useAPI";
 import authAPI from "../../api/auth";
 import AdminReg from "../../components/Registration/Admin";
+
 const Page = () => {
     const navigate = useNavigate();
     const { request, loading } = useAPI(authAPI.registerAdmin, { successMessage: "Admin Account Created!", errorMessage: "Could not register account", onComplete: () => { navigate(-1) } })

@@ -2,7 +2,6 @@ import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { useStyletron } from "baseui"
-
 const Layout = () => {
     const [css, theme] = useStyletron();
     const { metadata } = useAuth();

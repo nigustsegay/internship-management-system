@@ -6,6 +6,7 @@ import PaginatedTable from "../../components/PaginatedTable";
 import Attendance from "../../components/Attendance";
 import useAPI from "../../hooks/useAPI";
 import studentsAPI from "../../api/students";
+
 const Page = () => {
     const { studentId } = useParams();
     const { loading, request, error, data } = useAPI(studentsAPI.getByStudentId);
