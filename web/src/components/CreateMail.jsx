@@ -24,7 +24,21 @@ const Component = ({
     isLoading,
     contacts
 }) => {
-    const {
+    const { Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
         values,
         errors,
         touched,
@@ -47,7 +61,21 @@ const Component = ({
                 }
             }
         },
-    });
+    }); Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
 
     const FileUploaded = (field, subHeading) => {
         return <Notification
