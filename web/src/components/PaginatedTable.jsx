@@ -21,6 +21,20 @@ import Plus from 'baseui/icon/plus';
 import Delete from 'baseui/icon/delete';
 import Overflow from 'baseui/icon/overflow';
 import Header from "./Header";
+ Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
 
 function PaginatedTable(props) {
   const [css, theme] = useStyletron();
@@ -50,7 +64,21 @@ function PaginatedTable(props) {
   };
   const notificationOverrides = {
     Body: { style: { width: 'auto', margin: "1rem .5rem" } },
-  };
+  }; Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
   return (
     <React.Fragment>
       <div className={css({ height: props.height || '500px', marginBottom: "10px" })}>
@@ -109,6 +137,20 @@ function PaginatedTable(props) {
             ))}
           </StyledBody>
         </StyledTable>
+ Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
 
       </div>
       <div
@@ -139,7 +181,21 @@ function PaginatedTable(props) {
             />
           )}
           placement={PLACEMENT.bottom}
-        >
+        > Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
           <Button kind={KIND.tertiary} endEnhancer={TriangleDown}>
             {`${limit} Rows`}
           </Button>
