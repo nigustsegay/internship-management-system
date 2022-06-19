@@ -18,6 +18,9 @@ import UserProfile from "./StudentProfile";
 const itemProps = {
     height: '60vh',
     display: 'flex',
+const itemProps = {
+    height: '60vh',
+    display: 'flex',
 };
 const wideItemProps = {
     ...itemProps,
@@ -50,7 +53,8 @@ const Page = () => {
     const { loading: sendLoading, request: sendRequest } = useAPI(messagesAPI.send, { errorMessage: "Could not send message", onComplete: () => { setMessage("") } })
     const { request: internshipRequest, loading: userLoading } = useAPI(INTERNSHIP_API_REQUEST, {
         onComplete: (data) => {
-            if (data && data.length) {
+            if (data && data.length
+                if (data && data.length){
                 setUsers(data.map(({ student }) => { { return { title: student.user.fullname, subtitle: student.user.email, body: student.user.role, imgUrl: student.user.profilePicture || 'https://via.placeholder.com/60x60' } } }));
             }
             else {
