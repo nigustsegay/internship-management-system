@@ -14,7 +14,21 @@ const Component = ({
     onSubmit,
     isLoading,
     companies
-}) => {
+}) => { Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
     const {
         values,
         errors,
@@ -37,6 +51,20 @@ const Component = ({
             }
         },
     });
+ Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
 
     return (
         <>
@@ -57,7 +85,21 @@ const Component = ({
                 id="save"
                 onClick={() => {
                     handleSubmit();
+                }} Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
                 }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
                 isLoading={isLoading}
             >
                 Assign
