@@ -10,6 +10,20 @@ import { Notification } from 'baseui/notification';
 const commonSchema = {
     documentOfIntent: Yup.string().required('Document of Intent is required'),
 };
+ Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
 
 const Component = ({
     documentOfIntent: initialDocumentOfIntent,
@@ -37,6 +51,20 @@ const Component = ({
             }
         },
     });
+ Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
 
     const FileUploaded = (field, subHeading) => {
         return <Notification
