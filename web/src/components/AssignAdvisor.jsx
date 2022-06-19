@@ -15,6 +15,15 @@ const Component = ({
     onReject,
     isLoading,
     advisors
+    const Component = ({
+    advisor: initialAdvisor,
+    onSubmit,
+    onReject,
+    isLoading,
+    advisors
+    
+    
+    
 }) => {
     const {
         values,
@@ -39,25 +48,15 @@ const Component = ({
         },
     });
 
-    return (
-        <>
-            <FormControl label="Advisor" error={!advisors.length ? "No Advisors are currently avaliable" : errors.advisor}>
-                <Select
-                    disabled={isLoading}
-                    id="advisor"
-                    options={advisors}
-                    onChange={({ value }) => {
-                        if (value && value.length)
-                            setFieldValue("advisor", value);
-                    }}
-                    value={values.advisor}
-                />
-            </FormControl>
-            <Button
+    
+            >
+                Assign
+            </Button>
+            {onReject && <Button
                 type="button"
                 id="save"
                 onClick={() => {
-                    handleSubmit();
+                    onReject();
                 }}
                 isLoading={isLoading}
                 overrides={{
@@ -65,12 +64,7 @@ const Component = ({
                         style: ({ $theme }) => ({
                             marginLeft: $theme.sizing.scale200,
                             marginRight: $theme.sizing.scale200,
-
-                        }),
-                    },
-                }}
-            >
-                Assign
+ Assign
             </Button>
             {onReject && <Button
                 type="button"
@@ -88,7 +82,21 @@ const Component = ({
                         }),
                     },
                 }}
-            >
+            > Assign
+            </Button>
+            {onReject && <Button
+                type="button"
+                id="save"
+                onClick={() => {
+                    onReject();
+                }}
+                isLoading={isLoading}
+                overrides={{
+                    BaseButton: {
+                        style: ({ $theme }) => ({
+                            marginLeft: $theme.sizing.scale200,
+                            marginRight: $theme.sizing.scale200,
+
                 Reject
             </Button>}
         </>
